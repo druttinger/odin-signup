@@ -1,0 +1,173 @@
+/* Default CSS */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: row;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section1 {
+    background-image: url('./img/halie-west-25xggax4bSA-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    flex: 1 1 1;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    height: 100vh;
+}
+
+.section2 {
+    background-color: #ffffff;
+    flex: 1 1 2;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-direction: column;
+    /* padding: 40px; */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 400px);
+}
+
+.section2 form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+    gap: 20px;
+    background-color: antiquewhite;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);}
+
+.section2 label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    flex-basis: 100%;
+}
+
+.section2 input[type="text"],
+.section2 input[type="email"],
+.section2 input[type="password"] {
+    max-width: 150px;
+    /* padding: 10px; */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    flex: 1 1 50%;
+    border-radius: 10;
+    /* calc(50% - 20px); */
+    
+}
+
+:focus{
+    /* border: 1px solid #333; */
+    box-shadow: 6px 6px 2px 1px rgba(80, 80, 126, 0.2);
+}
+
+.section2 input[type="password"]:invalid {
+    border: 1px solid red;
+},
+
+
+
+/* input[type="submit"] { */
+.section2 form button {
+    width: 80px;
+    max-width: 80px;
+    background-color: #596D48;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.form-element{
+    flex: 1 1 50%;
+    width: 50%;
+    min-width: 40%;
+    width: auto;
+    max-width: min-content;
+    position: relative;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section2 input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+@font-face {
+    font-family: 'OdinFont';
+    src: url('./fonts/Norse-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.odin {
+    font-family: 'OdinFont', Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 100px;
+    position: absolute;
+    top: 200px;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: small;
+}
+
+.form-info {
+    align-self: center;
+    padding 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.submit-form {
+    display: flex; 
+    flex: 0 1 20%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    /* background-color: white; */
+}
+
+.below-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}

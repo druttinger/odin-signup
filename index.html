@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+        <div class="section1">
+            <div class="odin">
+                <img src="./img/odin-lined.png" alt="Odin Logo" width="100" style="background-color: transparent;">
+                Odin
+            </div>
+            <div class="footer">Fern photo by 
+                <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">
+                    Halie West
+                </a>
+            </div>
+        </div>
+        <div class="section2">
+            <div class="form-info">
+                <h1>Sign Up</h1>
+                <p>Sign up to get started with Odin</p>
+                <p>Be advised that this is just a practice project.</p>
+                <p>Clicking submit will take you to the real website which will</p>
+                <h3>CHANGE YOUR LIFE!</h3>
+            </div>
+            <form>
+                <div class="form-element">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required><br><br>
+                    
+                </div>
+                <div class="form-element">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required><br><br>
+                    
+                </div>
+                <div class="form-element">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    
+                </div>
+                <div class="form-element">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required><br><br>
+                    
+                </div>
+                <div class="form-element">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><br><br>
+                    
+                </div>
+                <div class="form-element">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><br><br>
+                    
+                </div>
+                <div class="submit-form">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+            <div class="below-form">
+                <p>You know you want it!</p>
+                <div id="message">
+                    <h3>Password must contain the following:</h3>
+                    <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                    <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                    <p id="number" class="invalid">A <b>number</b></p>
+                    <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                </div>
+            </div>
+        </div>
+    
+    
+</body>
+</html>
